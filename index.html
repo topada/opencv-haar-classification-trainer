@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>haar classification trainer</title>
+
+  <link rel="stylesheet" href="index.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <h1>haar classification trainer</h1>
+
+  <div id="trainer-wrapper">
+    <div id="active-tracker" class="tracker"></div>
+    <!-- tracker tracked get populated here -->
+  </div>
+
+  <dl>
+    <dt>image</dt>    <dd id="dd-image">0/0</dd>
+    <dt>tracked</dt>  <dd id="dd-tracked">0</dd>
+    <dt>pos x</dt>    <dd id="dd-posx">0</dd>
+    <dt>pos y</dt>    <dd id="dd-posy">0</dd>
+    <dt>size</dt>     <dd id="dd-size">30</dd>
+  </dl>
+
+  <textarea id="data-list"></textarea>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="haar-trainer.js"></script>
+</body>
+</html>
